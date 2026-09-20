@@ -1,0 +1,10 @@
+services:
+  selfbot:
+    build: .
+    restart: always
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      DB_PATH: data/selfbot.db
