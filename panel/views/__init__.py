@@ -1,1 +1,0 @@
-"""Menu view modules."""
